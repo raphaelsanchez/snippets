@@ -1,4 +1,4 @@
 # snippets
 
-- Wordpress
-  - Modification des URLs
+## Wordpress
+- Modification des URLs
