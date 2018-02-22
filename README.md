@@ -1,4 +1,4 @@
 # snippets
 
 ## Wordpress
-- [Modification des URLs](snippets/wordpress.md)
+- [Modification des URLs](wordpress.md)
