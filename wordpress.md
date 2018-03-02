@@ -4,20 +4,20 @@
 
 ```
 # Changer l'URL du site
-UPDATE wp_options
+UPDATE PREFIX_options
 SET option_value = replace(option_value, 'http://www.ancien-site.com', 'http://www.nouveau-site.com')
 WHERE option_name = 'home'
 OR option_name = 'siteurl';
 
 # Changer l'URL des GUID
-UPDATE wp_posts
-SET guid = REPLACE (guid, 'http://www.ancien-site.fr', 'http://www.nouveau-site.fr');
+UPDATE PREFIX_posts
+SET guid = REPLACE (guid, 'http://www.ancien-site.com', 'http://www.nouveau-site.com');
 
 # Changer l'URL des médias dans les articles et pages
-UPDATE wp_posts
-SET post_content = REPLACE (post_content, 'http://www.ancien-site.fr', 'http://www.nouveau-site.fr');
+UPDATE PREFIX_posts
+SET post_content = REPLACE (post_content, 'http://www.ancien-site.com', 'http://www.nouveau-site.com');
 
 # Changer l'URL des données meta
-UPDATE wp_postmeta
+UPDATE PREFIX_postmeta
 SET meta_value = REPLACE (meta_value, 'http://www.ancien-site.com','http://www.nouveau-site.com');
 ```
